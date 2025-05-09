@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="container">
+      <table role="grid" aria-label="Tic Tac Toe Board">
+        <tr>
+          <td class="cell" id="0" role="button" tabindex="0"></td>
+          <td class="cell" id="1" role="button" tabindex="0"></td>
+          <td class="cell" id="2" role="button" tabindex="0"></td>
+        </tr>
+        <tr>
+          <td class="cell" id="3" role="button" tabindex="0"></td>
+          <td class="cell" id="4" role="button" tabindex="0"></td>
+          <td class="cell" id="5" role="button" tabindex="0"></td>
+        </tr>
+        <tr>
+          <td class="cell" id="6" role="button" tabindex="0"></td>
+          <td class="cell" id="7" role="button" tabindex="0"></td>
+          <td class="cell" id="8" role="button" tabindex="0"></td>
+        </tr>
+      </table>
+
+      <div class="endgame hidden" aria-live="assertive">
+        <div class="text message"></div>
+        <button onclick="startGame()">Replay</button>
+      </div>
+    </main>
+
+    <footer class="corner-label">
+      <h1 class="title">Tic Tac Toe</h1>
+      <p class="subtitle">by blxsn</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
